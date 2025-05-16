@@ -62,7 +62,6 @@ dist/
 .vite/
 
 # Build output
-build/
 tmp/
 temp/
 
