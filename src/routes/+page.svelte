@@ -1,12 +1,25 @@
 <script lang="ts">
 	import {SVGS} from '$lib/types/svgs'
+
 	const phone = "3340250705"
 	const email = "daviduziel.gh@gmail.com"
 	const github = "DavidUGH.gihub.com"
+
+	let darkMode = $state(false);
+	$effect(() => {
+		darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+	});
+
 </script>
 
-<div class="flex bg-amber-50 min-h-screen p-4 justify-center items-start md:items-center">
-	<div class="flex flex-row bg-white p-5 max-h-300 max-w-400 shadow-2xl">
+<button
+	class={`absolute top-4 right-4 p-2 bg-gray-200 ${darkMode ? 'bg-amber-50' : 'bg-gray-800 text-white'} rounded`}
+	onclick={() => (darkMode = !darkMode)}
+>
+	{darkMode ? '☀️ Light':'🌙 Dark' }
+</button>
+<div class={`flex min-h-screen p-4 justify-center items-start md:items-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-amber-50 text-black'}`}>
+	<div class={`flex flex-row p-5 max-h-300 max-w-400 shadow-2xl ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
 		<div class="flex flex-col p-10 gap-10 max-w-100">
 			<img class="rounded-full w-80 align-middle justify-center"
 			src="david.jpeg" alt="">
@@ -50,7 +63,7 @@
 					<p class="flex text-3xl text-left gap-2 whitespace-nowrap">
 					<strong class="whitespace-nowrap">📦 DevOps {'&'} Tools: </strong> Linux, Docker, Git, CI/CD, NGINX </p>
 						<p class="flex text-3xl text-left gap-2 whitespace-nowrap items-center">
-							<strong class="whitespace-nowrap">🌍 Languages: </strong> <strong class="bg-amber-400 p-1">English (Conversational/Professional)</strong>, Spanish (Native)</p>
+		<strong class="whitespace-nowrap">🌍 Languages: </strong> <strong class={`p-1 ${darkMode? 'bg-indigo-800' : 'bg-amber-400' }`}>English (Conversational/Professional)</strong>, Spanish (Native)</p>
 			</div>
 			<div class="flex flex-col gap-2">
 				<p class="text-4xl text-left font-bold">EXPERIENCE</p>
@@ -58,8 +71,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<p class="text-4xl text-left font-bold">PROJECTS</p>
-				<a class="flex flex-col rounded-2xl shadow-xl p-5 hover:bg-amber-300 active:bg-amber-500"
-				 href="https://github.com/DavidUGH/ShoppingList"
+				<a class={`flex flex-col rounded-2xl shadow-xl p-5 ${darkMode? 'hover:bg-indigo-800' : 'hover:bg-amber-400' } ${darkMode? 'active:bg-indigo-700' : 'active:bg-amber-500' }`} href="https://github.com/DavidUGH/ShoppingList"
 					>
 					<p class="text-3xl">
 						<strong>Shopping List</strong> SvelteKit, TailwindCSS </p>	
