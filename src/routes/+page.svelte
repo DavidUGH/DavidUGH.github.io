@@ -13,7 +13,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- DARK MODE TOGGLE BUTTON -->
+<!-- Dark Mode -->
 <button
 	class={`fixed top-4 right-4 w-20 text-1xl md:text-2xl rounded-2xl md:fixed md:top-4 md:right-4 p-2 ${darkMode ? 'bg-amber-50' : 'bg-gray-800 text-white'} rounded z-10`}
 	onclick={() => (darkMode = !darkMode)}
@@ -21,13 +21,12 @@
 	{darkMode ? '☀️ Light' : '🌙 Dark'}
 </button>
 
-<!-- MAIN -->
 <div class={`flex min-h-screen md:p-10 justify-center items-start md:items-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-amber-50 text-black'}`}>
-	<!-- CONTAINER -->
+	<!-- Container -->
 	<div class={`flex flex-col md:flex-row p-1 md:p-5 max-w-screen-lg shadow-2xl rounded-xl w-max-full md:max-w-4/6 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
 		<div class="flex flex-col p-6 gap-6 w-full md:w-1/2">
 			<img class="rounded-full w-60 md:w-80 self-center" src="david.jpeg" alt="David Uziel" />
-			<!-- CONTACT -->
+			<!-- Contact -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">CONTACT</p>
 				<p class="flex items-center text-lg sm:text-2xl gap-2 flex-wrap">
@@ -50,7 +49,7 @@
 				</a>
 			</div>
 
-			<!-- EDUCATION -->
+			<!-- Education -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">EDUCATION</p>
 				<p class="text-2xl">Universidad de Guadalajara</p>
@@ -58,17 +57,16 @@
 			</div>
 		</div>
 
-		<!-- DIVIDER -->
 		<div class="hidden md:block w-2 bg-black mx-2"></div>
 
-		<!-- RIGHT COLUMN -->
+		<!-- Column -->
 		<div class="flex flex-col p-6 gap-6 w-full md:w-20/20">
 			<div>
 				<p class="text-4xl md:text-6xl font-bold">David Uziel</p>
 				<p class="text-4xl md:text-6xl">Guevara Hernández</p>
 			</div>
 
-			<!-- SKILLS -->
+			<!-- Skills -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">SKILLS</p>
 				<p class="text-lg sm:text-2xl flex gap-2 flex-wrap">
@@ -90,13 +88,13 @@
 				</p>
 			</div>
 
-			<!-- EXPERIENCE -->
+			<!-- Experience -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">EXPERIENCE</p>
 				<p class="text-xl sm:text-2xl">✨ Full-Stack Developer, Mobile App Developer & Server Administrator at CUCS</p>
 			</div>
 
-			<!-- PROJECTS -->
+			<!-- Projects -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">PROJECTS</p>
 				<a class={`flex flex-col w-full rounded-2xl shadow-xl p-5 transition ${darkMode ? 'hover:bg-indigo-800 active:bg-indigo-700' : 'hover:bg-amber-400 active:bg-amber-500'}`} href="https://github.com/DavidUGH/ShoppingList">
