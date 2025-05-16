@@ -23,9 +23,13 @@
 
 <div class={`flex min-h-screen md:p-10 justify-center items-start md:items-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-amber-50 text-black'}`}>
 	<!-- Container -->
-	<div class={`flex flex-col md:flex-row p-1 md:p-5 max-w-screen-lg shadow-2xl rounded-xl w-max-full md:max-w-4/6 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
-		<div class="flex flex-col p-6 gap-6 w-full md:w-1/2">
+	<div class={`flex flex-col md:flex-row md:p-5 max-w-screen-lg shadow-2xl rounded-xl w-max-full md:max-w-4/6 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+		<div class="flex flex-col p-3 md:p-6 gap-6 w-full md:w-1/2">
 			<img class="rounded-full w-60 md:w-80 self-center" src="david.jpeg" alt="David Uziel" />
+			<div class="md:hidden text-center mt-4">
+				<p class="text-5xl font-bold">David Uziel</p>
+				<p class="text-2xl">Guevara Hernández</p>
+			</div>
 			<!-- Contact -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">CONTACT</p>
@@ -51,19 +55,19 @@
 
 			<!-- Education -->
 			<div class="flex flex-col gap-2">
-				<p class="text-3xl font-bold">EDUCATION</p>
-				<p class="text-2xl">Universidad de Guadalajara</p>
-				<p class="text-2xl">Bachelor's degree in Computer Engineering at CUCEI</p>
+				<p class="text-2xl md:text-3xl font-bold">EDUCATION</p>
+				<p class="text-xl md:text-2xl">Universidad de Guadalajara</p>
+				<p class="text-xl md:text-2xl">Bachelor's degree in Computer Engineering at CUCEI</p>
 			</div>
 		</div>
 
 		<div class="hidden md:block w-2 bg-black mx-2"></div>
 
 		<!-- Column -->
-		<div class="flex flex-col p-6 gap-6 w-full md:w-20/20">
+		<div class="flex flex-col p-3 md:p-6 gap-6 w-full md:w-20/20">
 			<div>
-				<p class="text-4xl md:text-6xl font-bold">David Uziel</p>
-				<p class="text-4xl md:text-6xl">Guevara Hernández</p>
+				<p class="hidden md:block text-4xl md:text-6xl font-bold">David Uziel</p>
+				<p class="hidden md:block text-4xl md:text-6xl">Guevara Hernández</p>
 			</div>
 
 			<!-- Skills -->
