@@ -71,26 +71,88 @@
 			</div>
 
 			<!-- Skills -->
-			<div class="flex flex-col gap-2">
+			<div class="flex flex-col gap-3">
 				<p class="text-3xl font-bold">SKILLS</p>
-				<p class="text-lg sm:text-2xl flex gap-2 flex-wrap">
+
+				<!-- Programming -->
+				<p class="hidden md:block text-lg sm:text-2xl gap-2 flex-wrap">
 					<strong class="whitespace-nowrap">🛠 Programming:</strong> C#, C++, Rust, Go, Python, JS, TS, Lisp
 				</p>
-				<p class="text-lg sm:text-2xl flex gap-2 flex-wrap">
+				<div class="block flex-col md:hidden text-lg w-full">
+					<strong>🛠 Programming:</strong>
+					<ul class="list-disc list-inside max-h-2/5 columns-2 gap-1">
+						<li>C#</li>
+						<li>C++</li>
+						<li>Rust</li>
+						<li>Go</li>
+						<li>Python</li>
+						<li>JS</li>
+						<li>TS</li>
+						<li>Lisp</li>
+					</ul>
+				</div>
+
+				<!-- Frontend -->
+				<p class="hidden md:flex text-lg sm:text-2xl gap-2 flex-wrap">
 					<strong class="whitespace-nowrap">💻 Frontend:</strong> React, React Native, TailwindCSS, Svelte, HTML5, CSS3
 				</p>
-				<p class="text-lg sm:text-2xl flex gap-2 flex-wrap">
+				<div class="block md:hidden text-lg w-full">
+					<strong>💻 Frontend:</strong>
+					<ul class="list-disc list-inside max-h-2/5 columns-2 gap-1">
+						<li>React</li>
+						<li>React Native</li>
+						<li>TailwindCSS</li>
+						<li>Svelte</li>
+						<li>HTML5</li>
+						<li>CSS3</li>
+					</ul>
+				</div>
+
+				<!-- Backend -->
+				<p class="hidden md:flex text-lg sm:text-2xl gap-2 flex-wrap">
 					<strong class="whitespace-nowrap">⚙️ Backend:</strong> Node.js, Deno, Express.js, MySQL, REST APIs
 				</p>
-				<p class="text-lg sm:text-2xl flex gap-2 flex-wrap">
+				<div class="block md:hidden text-lg w-full">
+					<strong>⚙️ Backend:</strong>
+					<ul class="list-disc list-inside max-h-2/5 columns-2 gap-1">
+						<li>Node.js</li>
+						<li>Deno</li>
+						<li>Express.js</li>
+						<li>MySQL</li>
+						<li>REST APIs</li>
+					</ul>
+				</div>
+
+				<!-- DevOps -->
+				<p class="hidden md:flex text-lg sm:text-2xl gap-2 flex-wrap">
 					<strong class="whitespace-nowrap">📦 DevOps:</strong> Linux, Docker, Git, CI/CD, NGINX
 				</p>
-				<p class="text-lg sm:text-2xl flex gap-2 items-center flex-wrap">
-					<strong class="whitespace-nowrap">🌍 Languages:</strong>
-					<strong class={`p-1 rounded ${darkMode ? 'bg-indigo-800' : 'bg-amber-400'}`}>English (Professional)</strong>,
-					Spanish (Native)
-				</p>
-			</div>
+				<div class="block md:hidden text-lg w-full">
+					<strong>📦 DevOps:</strong>
+					<ul class="list-disc list-inside max-h-2/5 columns-2 gap-1">
+						<li>Linux</li>
+						<li>Docker</li>
+						<li>Git</li>
+						<li>CI/CD</li>
+						<li>NGINX</li>
+					</ul>
+				</div>
+
+	<!-- Languages -->
+	<p class="hidden md:flex text-lg sm:text-2xl gap-2 items-center flex-wrap">
+		<strong class="whitespace-nowrap">🌍 Languages:</strong>
+		<strong class={`p-1 rounded ${darkMode ? 'bg-indigo-800' : 'bg-amber-400'}`}>English (Professional)</strong>,
+		Spanish (Native)
+	</p>
+	<div class="block md:hidden text-lg w-full">
+		<strong>🌍 Languages:</strong>
+		<ul class="list-disc list-inside max-h-2/5 gap-1">
+			<li><strong class={`p-1 rounded ${darkMode ? 'bg-indigo-800' : 'bg-amber-400'}`}>English (Professional)</strong></li>
+			<li>Spanish (Native)</li>
+		</ul>
+	</div>
+</div>
+
 
 			<!-- Experience -->
 			<div class="flex flex-col gap-2">
