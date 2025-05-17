@@ -34,13 +34,13 @@
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">CONTACT</p>
 				<p class="flex items-center text-lg sm:text-2xl gap-2 flex-wrap">
-					<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 shrink-0" viewBox="0 -960 960 960">
+					<svg xmlns="http://www.w3.org/2000/svg" class={`w-6 h-6 shrink-0 ${darkMode? 'fill-white' : 'fill-black'}`} viewBox="0 -960 960 960">
 						<path d={SVGS['phone']} />
 					</svg>
 					{phone}
 				</p>
 				<p class="flex items-center text-lg sm:text-2xl gap-2 flex-wrap">
-					<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 shrink-0" viewBox="0 -960 960 960">
+					<svg xmlns="http://www.w3.org/2000/svg" class={`w-6 h-6 shrink-0 ${darkMode? 'fill-white' : 'fill-black'}`} viewBox="0 -960 960 960">
 						<path d={SVGS['at']} />
 					</svg>
 					{email}
@@ -76,11 +76,12 @@
 
 				<!-- Programming -->
 				<p class="hidden md:block text-lg sm:text-2xl gap-2 flex-wrap">
-					<strong class="whitespace-nowrap">🛠 Programming:</strong> C#, C++, Rust, Go, Python, JS, TS, Lisp
+					<strong class="whitespace-nowrap">🛠 Programming:</strong> Java, C#, C++, Rust, Go, Python, JS, TS, Lisp
 				</p>
 				<div class="block flex-col md:hidden text-lg w-full">
 					<strong>🛠 Programming:</strong>
 					<ul class="list-disc list-inside max-h-2/5 columns-2 gap-1">
+						<li>Java</li>
 						<li>C#</li>
 						<li>C++</li>
 						<li>Rust</li>
@@ -93,7 +94,7 @@
 				</div>
 
 				<!-- Frontend -->
-				<p class="hidden md:flex text-lg sm:text-2xl gap-2 flex-wrap">
+				<p class="hidden md:flex text-lg sm:text-2xl gap-2 flex-wrap ">
 					<strong class="whitespace-nowrap">💻 Frontend:</strong> React, React Native, TailwindCSS, Svelte, HTML5, CSS3
 				</p>
 				<div class="block md:hidden text-lg w-full">
@@ -125,7 +126,7 @@
 
 				<!-- DevOps -->
 				<p class="hidden md:flex text-lg sm:text-2xl gap-2 flex-wrap">
-					<strong class="whitespace-nowrap">📦 DevOps:</strong> Linux, Docker, Git, CI/CD, NGINX
+					<strong class="whitespace-nowrap">📦 DevOps:</strong> Linux, Docker, Kubernetes, Git, CI/CD, NGINX
 				</p>
 				<div class="block md:hidden text-lg w-full">
 					<strong>📦 DevOps:</strong>
@@ -163,9 +164,18 @@
 			<!-- Projects -->
 			<div class="flex flex-col gap-2">
 				<p class="text-3xl font-bold">PROJECTS</p>
-				<a class={`flex flex-col w-full rounded-2xl shadow-xl p-5 transition ${darkMode ? 'hover:bg-indigo-800 active:bg-indigo-700' : 'hover:bg-amber-400 active:bg-amber-500'}`} href="https://github.com/DavidUGH/ShoppingList">
-					<p class="text-xl sm:text-2xl font-bold">Shopping List</p>
-					<p class="text-lg sm:text-xl">SvelteKit, TailwindCSS — Designed a responsive mobile app for tracking expenses with Google Sheets integration.</p>
+				<a class={`flex flex-col w-full rounded-2xl shadow-xl p-5 transition border ${darkMode ? 'hover:bg-indigo-800 active:bg-indigo-700' : 'hover:bg-amber-400 active:bg-amber-500'}`} href="https://github.com/DavidUGH/ShoppingList">
+					<div class="flex flex-row justify-between">
+						<p class="text-xl sm:text-2xl font-bold">Shopping List </p>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi-github" viewBox="0 0 16 16">
+							<path d={SVGS['github']} />
+						</svg>
+					</div>
+					<p class="text-lg sm:text-xl">SvelteKit, TailwindCSS - Designed and developed a responsive mobile app for tracking expenses with Google Sheets integration.</p>
+				</a>
+				<a class={`flex flex-col w-full rounded-2xl shadow-xl p-5 transition border ${darkMode ? 'hover:bg-indigo-800 active:bg-indigo-700' : 'hover:bg-amber-400 active:bg-amber-500'}`} href="https://avilesceti.itch.io/better-butter-game">
+					<p class="text-xl sm:text-2xl font-bold">Better Butter Game</p>
+					<p class="text-lg sm:text-xl">Godot - Designed and developed a video game for the 2023 Pirate Software Game Jam</p>
 				</a>
 			</div>
 		</div>
