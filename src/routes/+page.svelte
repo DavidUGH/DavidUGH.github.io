@@ -171,7 +171,7 @@
 							<path d={SVGS['github']} />
 						</svg>
 					</div>
-					<p class="text-lg sm:text-xl">SvelteKit, TailwindCSS - Designed and developed a responsive mobile app for tracking expenses with Google Sheets integration.</p>
+					<p class="text-lg sm:text-xl">SvelteKit + Capacitor, TailwindCSS - Designed and developed a responsive mobile app for tracking expenses with Google Sheets integration.</p>
 				</a>
 				<a class={`flex flex-col w-full rounded-2xl shadow-xl p-5 transition border ${darkMode ? 'hover:bg-indigo-800 active:bg-indigo-700' : 'hover:bg-amber-400 active:bg-amber-500'}`} href="https://avilesceti.itch.io/better-butter-game">
 					<p class="text-xl sm:text-2xl font-bold">Better Butter Game</p>
