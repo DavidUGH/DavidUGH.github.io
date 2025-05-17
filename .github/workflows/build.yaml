@@ -17,9 +17,6 @@ jobs:
 
       - run: npm install
       - run: npm run build
-      - run: npx svelte-kit sync
-      - run: npx svelte-kit export
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
