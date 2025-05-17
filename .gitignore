@@ -79,6 +79,7 @@ Thumbs.db
 .wrangler
 /.svelte-kit
 /build
+./build
 
 # OS
 .DS_Store
