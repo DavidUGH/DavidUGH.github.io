@@ -7,7 +7,11 @@
 		 <p class="text-xl font-bold sm:text-2xl">{name}</p>
 		 {@render children?.()}
 	 </div>
-	 <i>In development</i>
+	 {#if date}
+		 <i>{date}</i>
+	 {:else}
+		 <i>In development</i>
+	 {/if}
 	 <p class="text-lg sm:text-xl">
 		 SvelteKit + Capacitor, TailwindCSS - Designed and developed a responsive mobile app for
 		 tracking expenses with Google Sheets integration.
