@@ -28,9 +28,9 @@
 >
 	<!-- Container -->
 	<div
-		class={`w-max-full flex max-w-screen-lg flex-col rounded-xl shadow-2xl md:max-w-4/6 md:flex-row md:p-5 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}
+		class={`w-max-full flex max-w-screen-lg flex-col rounded-xl shadow-2xl md:max-w-7/8 md:flex-row md:p-5 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}
 	>
-		<div class="flex w-full flex-col gap-6 p-3 md:w-1/2 md:p-6">
+		<div class="flex w-full flex-col gap-6 p-3 md:max-w-1/3 md:min-w-1/3 md:p-6">
 			<img class="w-60 self-center object-cover aspect-2/2 rounded-full md:w-80" src="david.jpg" alt="David Uziel" />
 			<div class="mt-4 text-center md:hidden">
 				<p class="text-5xl font-bold">David Uziel</p>
@@ -49,7 +49,7 @@
 					</svg>
 					{phone}
 				</p>
-				<p class="flex flex-wrap items-center gap-2 text-lg sm:text-2xl">
+				<p class="flex flex-wrap items-center gap-2 text-lg sm:text-2xl break-all">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class={`h-6 w-6 shrink-0 ${darkMode ? 'fill-white' : 'fill-black'}`}
@@ -60,7 +60,7 @@
 					{email}
 				</p>
 				<a
-					class="flex flex-wrap items-center gap-2 text-lg sm:text-2xl"
+					class="flex flex-wrap items-center gap-2 text-lg sm:text-2xl break-all"
 					href="https://github.com/DavidUGH/"
 				>
 					<svg
